@@ -13,14 +13,14 @@
 
 using namespace std; 
 
-Attack::Attack() : strength(0), name("Hit") {}
+Attack::Attack() : strength(0), name("Miss") {}
 
 void Attack::set_name(const string &name_in) {
     name = name_in;
 }
 
 void Attack::set_strength(const int &strength_in) {
-    assert(strength_in == 50 || strength_in == 100);
+    assert(strength_in == 30 || strength_in == 70 || strength_in == 0);
     strength = strength_in;
 }
 
@@ -32,3 +32,7 @@ int Attack::get_strength() const {
     return strength;
 }
 
+std::ostream & operator<<(std::ostream &os, const Attack &attack) {
+    os << attack.get_name();
+    return os;
+}

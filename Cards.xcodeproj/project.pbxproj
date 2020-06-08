@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4EA2EF7D24894BC70006D287 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4EA2EF7C24894BC70006D287 /* main.cpp */; };
+		4E46F5C4248DC8C40056A6CD /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 4E46F5C3248DC8C40056A6CD /* Makefile */; };
+		4E9944FF24894C4400B7B1E9 /* Deck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E9944F824894C4300B7B1E9 /* Deck.cpp */; };
+		4E99450024894C4400B7B1E9 /* Attack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E9944F924894C4300B7B1E9 /* Attack.cpp */; };
+		4E99450224894C4400B7B1E9 /* Card.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E9944FD24894C4400B7B1E9 /* Card.cpp */; };
+		4EE0AA5D248B2D30005B688E /* Mythic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0AA5C248B2D30005B688E /* Mythic.cpp */; };
+		4EF8304F248B0C05004E154A /* Battle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4EF8304E248B0C05004E154A /* Battle.cpp */; };
+		4EF83051248B1E31004E154A /* Warrior.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E9945062489998800B7B1E9 /* Warrior.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +29,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4E46F5C3248DC8C40056A6CD /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		4E9944F624894C4300B7B1E9 /* Attack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Attack.h; sourceTree = "<group>"; };
+		4E9944F724894C4300B7B1E9 /* attack_tests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = attack_tests.cpp; sourceTree = "<group>"; };
+		4E9944F824894C4300B7B1E9 /* Deck.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Deck.cpp; sourceTree = "<group>"; };
+		4E9944F924894C4300B7B1E9 /* Attack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Attack.cpp; sourceTree = "<group>"; };
+		4E9944FA24894C4300B7B1E9 /* card_tests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = card_tests.cpp; sourceTree = "<group>"; };
+		4E9944FB24894C4400B7B1E9 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		4E9944FC24894C4400B7B1E9 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		4E9944FD24894C4400B7B1E9 /* Card.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Card.cpp; sourceTree = "<group>"; };
+		4E994503248987F400B7B1E9 /* deck_tests.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = deck_tests.cpp; sourceTree = "<group>"; };
+		4E9945052489985B00B7B1E9 /* Warrior.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Warrior.h; sourceTree = "<group>"; };
+		4E9945062489998800B7B1E9 /* Warrior.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Warrior.cpp; sourceTree = "<group>"; };
 		4EA2EF7924894BC70006D287 /* Cards */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Cards; sourceTree = BUILT_PRODUCTS_DIR; };
-		4EA2EF7C24894BC70006D287 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		4EE0AA5C248B2D30005B688E /* Mythic.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Mythic.cpp; sourceTree = "<group>"; };
+		4EF8304E248B0C05004E154A /* Battle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Battle.cpp; sourceTree = "<group>"; };
+		4EF83050248B0C6A004E154A /* Battle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Battle.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +61,21 @@
 		4EA2EF7024894BC70006D287 = {
 			isa = PBXGroup;
 			children = (
-				4EA2EF7B24894BC70006D287 /* Cards */,
+				4E9944F624894C4300B7B1E9 /* Attack.h */,
+				4E9944F924894C4300B7B1E9 /* Attack.cpp */,
+				4E9944FB24894C4400B7B1E9 /* Card.h */,
+				4E9944FD24894C4400B7B1E9 /* Card.cpp */,
+				4E9944FC24894C4400B7B1E9 /* Deck.h */,
+				4E9944F824894C4300B7B1E9 /* Deck.cpp */,
+				4E9945052489985B00B7B1E9 /* Warrior.h */,
+				4E9945062489998800B7B1E9 /* Warrior.cpp */,
+				4E46F5C3248DC8C40056A6CD /* Makefile */,
+				4EF83050248B0C6A004E154A /* Battle.h */,
+				4EF8304E248B0C05004E154A /* Battle.cpp */,
+				4EE0AA5C248B2D30005B688E /* Mythic.cpp */,
+				4E9944F724894C4300B7B1E9 /* attack_tests.cpp */,
+				4E9944FA24894C4300B7B1E9 /* card_tests.cpp */,
+				4E994503248987F400B7B1E9 /* deck_tests.cpp */,
 				4EA2EF7A24894BC70006D287 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,14 +86,6 @@
 				4EA2EF7924894BC70006D287 /* Cards */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		4EA2EF7B24894BC70006D287 /* Cards */ = {
-			isa = PBXGroup;
-			children = (
-				4EA2EF7C24894BC70006D287 /* main.cpp */,
-			);
-			path = Cards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +144,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EA2EF7D24894BC70006D287 /* main.cpp in Sources */,
+				4E9944FF24894C4400B7B1E9 /* Deck.cpp in Sources */,
+				4E99450024894C4400B7B1E9 /* Attack.cpp in Sources */,
+				4EF83051248B1E31004E154A /* Warrior.cpp in Sources */,
+				4E99450224894C4400B7B1E9 /* Card.cpp in Sources */,
+				4EF8304F248B0C05004E154A /* Battle.cpp in Sources */,
+				4E46F5C4248DC8C40056A6CD /* Makefile in Sources */,
+				4EE0AA5D248B2D30005B688E /* Mythic.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

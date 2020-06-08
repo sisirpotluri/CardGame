@@ -40,12 +40,17 @@ public:
     
     void reduce_health(int damage);
     
+    int get_health();
+    
+    void reset();
+    
+    Attack get_attack(std::string choice);
+    
     bool alive() const;
     
     Attack get_base();
     
     Attack get_ultra();
-    
     
 private:
     std::string element;
@@ -81,5 +86,12 @@ constexpr const char * const FORMS[] = {
 
 };
 const int NUM_FORMS = 5;
+
+std::ostream & operator<<(std::ostream &os, const Card &card);
+
+bool operator==(const Card &lhs, const Card &rhs);
+
+bool card_better(const Card &a, const Card &b,
+                 const std::string &aura_in, int round);
 
 #endif

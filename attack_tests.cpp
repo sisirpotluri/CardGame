@@ -32,10 +32,10 @@ void test_ctor_setters_getters() {
     assert(test.get_strength() == 0);
     
     test.set_name("Blue Tempest");
-    test.set_strength(50);
+    test.set_strength(30);
     
     assert(test.get_name() == "Blue Tempest");
-    assert(test.get_strength() == 50);
+    assert(test.get_strength() == 30);
     
     cout << "TEST PASSED" << endl;
     

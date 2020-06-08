@@ -24,7 +24,7 @@ private:
     
 };
 
-
+std::ostream & operator<<(std::ostream &os, const Attack&attack);
 
 
 

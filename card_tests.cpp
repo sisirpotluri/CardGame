@@ -9,6 +9,7 @@
 #include <cassert>
 #include <iostream>
 #include <string>
+#include <sstream>
 #include "Card.h"
 
 using namespace std;
@@ -17,6 +18,7 @@ void test_ctor();
 void test_set_attack();
 void test_origin_form();
 void test_reduce_health_alive();
+void test_print();
 
 int main () {
     
@@ -24,6 +26,7 @@ int main () {
     test_set_attack();
     test_origin_form();
     test_reduce_health_alive();
+    test_print();
     
     cout << "ALL TESTS PASSED" << endl;
     
@@ -52,11 +55,11 @@ void test_set_attack() {
     
     string level = "Base";
     
-    test.set_attack("Ashen Spell", level, 50);
+    test.set_attack("Ashen Spell", level, 30);
     
     Attack correct;
     
-    correct.set_strength(50);
+    correct.set_strength(30);
     
     correct.set_name("Ashen Spell");
     
@@ -65,9 +68,9 @@ void test_set_attack() {
     
     level = "Ultra";
     
-    test.set_attack("Photon Spear", level, 100);
+    test.set_attack("Photon Spear", level, 70);
     
-    correct.set_strength(100);
+    correct.set_strength(70);
     
     correct.set_name("Photon Spear");
     
@@ -112,13 +115,31 @@ void test_reduce_health_alive() {
     
     Card test = Card(Card::AQUA, Card::GRIFFIN);
     
-    test.reduce_health(50);
+    test.reduce_health(30);
     
     assert(test.alive() == true);
     
-    test.reduce_health(100);
+    test.reduce_health(70);
     
     assert(test.alive() == false);
+    
+    cout << "TEST PASSED" << endl;
+    
+}
+
+void test_print() {
+    
+    Card test = Card(Card::EARTH, Card::PHOENIX);
+    
+    string output_correct = "Earth Phoenix";
+    
+    ostringstream ss_output;
+    
+    ss_output << test;
+    
+    string correct = ss_output.str();
+    
+    assert(correct == output_correct);
     
     cout << "TEST PASSED" << endl;
     
