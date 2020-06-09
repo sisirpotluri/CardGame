@@ -83,7 +83,7 @@ void Deck::shuffle_deck() {
     int count_even = 1;
     int count_odd = DECK_SIZE / 2;
     
-    for (int s = 0; s < 3; s++) {
+    for (int s = 0; s < 4; s++) {
         count_even = 1;
         count_odd = DECK_SIZE / 2;
         for (int i = DECK_SIZE - 1; i >= 0; i--) {

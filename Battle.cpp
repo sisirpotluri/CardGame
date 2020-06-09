@@ -40,7 +40,9 @@ void Battle::play_game() {
     
         cout << "Battle " << (battle_count + 1) << " begins now!" << endl;
         
-        shuffle();
+        for (int i = 0; i < (battle_count + 1); i++) {
+            shuffle();
+        }
         
         give_cards();
         

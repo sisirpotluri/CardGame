@@ -159,13 +159,16 @@ public:
         
         cout << "Warrior " << *this << " gave " << *opponent << " " << deal << endl;
         
-        cout << "Warrior " << *this << "took the remaining cards." << endl;
+        cout << "Warrior " << *this << " took the remaining cards." << endl;
         
         dealt.erase(dealt.begin() + deal_index);
         
         give_card(dealt[1], 2);
         
         give_card(dealt[0], 2);
+        
+        dealt.erase(dealt.begin());
+        dealt.erase(dealt.begin());
         
         cout << endl;
         

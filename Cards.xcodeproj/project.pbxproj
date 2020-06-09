@@ -11,7 +11,7 @@
 		4E9944FF24894C4400B7B1E9 /* Deck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E9944F824894C4300B7B1E9 /* Deck.cpp */; };
 		4E99450024894C4400B7B1E9 /* Attack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E9944F924894C4300B7B1E9 /* Attack.cpp */; };
 		4E99450224894C4400B7B1E9 /* Card.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E9944FD24894C4400B7B1E9 /* Card.cpp */; };
-		4EE0AA5D248B2D30005B688E /* Mythic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0AA5C248B2D30005B688E /* Mythic.cpp */; };
+		4EC7F644248F1464006B2472 /* Mythic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0AA5C248B2D30005B688E /* Mythic.cpp */; };
 		4EF8304F248B0C05004E154A /* Battle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4EF8304E248B0C05004E154A /* Battle.cpp */; };
 		4EF83051248B1E31004E154A /* Warrior.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E9945062489998800B7B1E9 /* Warrior.cpp */; };
 /* End PBXBuildFile section */
@@ -150,7 +150,7 @@
 				4E99450224894C4400B7B1E9 /* Card.cpp in Sources */,
 				4EF8304F248B0C05004E154A /* Battle.cpp in Sources */,
 				4E46F5C4248DC8C40056A6CD /* Makefile in Sources */,
-				4EE0AA5D248B2D30005B688E /* Mythic.cpp in Sources */,
+				4EC7F644248F1464006B2472 /* Mythic.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
