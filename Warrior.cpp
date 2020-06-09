@@ -49,7 +49,7 @@ public:
     
     Card * play_card_round_one(const string &aura_in) override {
         
-        cout << "Player " << *this << "'s turn." << endl;
+        cout << "Warrior " << *this << "'s turn." << endl;
         
         int play_index = 0;
         
@@ -74,7 +74,7 @@ public:
     
     Card * play_card_round_two() override {
         
-        cout << "Player " << *this << "'s turn." << endl;
+        cout << "Warrior " << *this << "'s turn." << endl;
         
         int play_index = 0;
         
@@ -102,7 +102,7 @@ public:
     Attack choose_attack(Card * card_in) override{
         Attack choice;
         
-        cout << "Player " << *this << "'s turn." << endl;
+        cout << "Warrior " << *this << "'s turn." << endl;
         
         if (card_in -> get_health() > 50) {
             choice = card_in -> get_ultra();
@@ -127,7 +127,7 @@ public:
         
         string aura = "None";
         
-        cout << "Player " << *this << " deals cards." << endl;
+        cout << "Warrior " << *this << " deals cards." << endl;
 
         for (int i = 0; i < cards_left; i++) {
             if (!card_better(dealt[i], deal, aura, 2)) {
@@ -140,7 +140,7 @@ public:
         
         opponent -> give_card(deal, 2);
         
-        cout << "Player " << *this << " gave " << *opponent << " " << deal << endl;
+        cout << "Warrior " << *this << " gave " << *opponent << " " << deal << endl;
         
         dealt.erase(dealt.begin() + deal_index);
         
@@ -157,7 +157,9 @@ public:
         
         opponent -> give_card(deal, 2);
         
-        cout << "Player " << *this << " gave " << *opponent << " " << deal << endl;
+        cout << "Warrior " << *this << " gave " << *opponent << " " << deal << endl;
+        
+        cout << "Warrior " << *this << "took the remaining cards." << endl;
         
         dealt.erase(dealt.begin() + deal_index);
         
@@ -266,7 +268,7 @@ public:
         
         int play_index = 0;
         
-        cout << "Player " << *this << "'s turn." << endl;
+        cout << "Warrior " << *this << "'s turn." << endl;
         
         cout << "Current cards:" << endl;
         for (int i = 0; i < hand_one_size; i++) {
@@ -304,7 +306,7 @@ public:
         
         int play_index = 0;
         
-        cout << "Player " << *this << "'s turn." << endl;
+        cout << "Warrior " << *this << "'s turn." << endl;
         
         cout << "Current cards:" << endl;
         for (int i = 0; i < hand_two_size; i++) {
@@ -344,7 +346,7 @@ public:
         
         string choice_attack;
         
-        cout << "Player " << *this << ", please choose an attack to use." << endl;
+        cout << "Warrior " << *this << ", please choose an attack to use." << endl;
         
         cout << "Base Attack: " << card_in -> get_base() << endl;
         
@@ -382,7 +384,7 @@ public:
         
         int cards_left = 4;
         
-        cout << "Player " << *this << " deals cards." << endl;
+        cout << "Warrior " << *this << " deals cards." << endl;
         
         cout << "Cards to be dealt:" << endl;
         for (int i = 0; i < cards_left; i++) {
@@ -404,7 +406,7 @@ public:
         
         opponent -> give_card(deal, 2);
         
-        cout << "Player " << *this << " gave " << *opponent << " " << deal << endl;
+        cout << "Warrior " << *this << " gave " << *opponent << " " << deal << endl;
         
         dealt.erase(dealt.begin() + deal_index);
         
@@ -426,7 +428,9 @@ public:
         
         opponent -> give_card(deal, 2);
         
-        cout << "Player " << *this << " gave " << *opponent << " " << deal << endl;
+        cout << "Warrior " << *this << " gave " << *opponent << " " << deal << endl;
+        
+        cout << "Warrior " << *this << "took the remaining cards." << endl;
         
         dealt.erase(dealt.begin() + deal_index);
 
