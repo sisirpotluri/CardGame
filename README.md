@@ -135,7 +135,7 @@ $ ./mythic.exe
 
 For any questions or collaboration opportunities, please email me at sisirpotluri2001@gmail.com
 
-#Appendix
+# Appendix
 
 Here are all the Cards and their respective Attacks. 
 
