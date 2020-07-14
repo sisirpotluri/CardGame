@@ -20,7 +20,7 @@ void Attack::set_name(const string &name_in) {
 }
 
 void Attack::set_strength(const int &strength_in) {
-    assert(strength_in == 30 || strength_in == 70 || strength_in == 0);
+    assert(strength_in == 30 || strength_in == 70 || strength_in == 0); 
     strength = strength_in;
 }
 
