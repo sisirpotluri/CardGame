@@ -296,10 +296,4 @@ void Battle::finish() {
     
 }
 
-void Battle::move_warriors() {
-    
-    Warrior * temp = warriors_ptrs[0];
-    warriors_ptrs[0] = warriors_ptrs[1];
-    warriors_ptrs[1] = temp;
-    
-}
+
