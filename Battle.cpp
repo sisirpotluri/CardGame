@@ -229,7 +229,7 @@ void Battle::play_round_one() {
         round_one_winner = warriors_ptrs[1];
         cout << *round_one_winner << " wins round one! " << endl;
         warriors_ptrs[0] -> reset_hand();
-        warriors_ptrs[1] -> reset_hand();
+        warriors_ptrs[1] -> reset_hand(); 
         warriors_ptrs[1] -> deal_cards(must_deal, warriors_ptrs[0]);
         
     }
