@@ -83,7 +83,7 @@ int main () {
     
     Battle main_battle(data, num_wars);
     
-    main_battle.play_game();
+    main_battle.play_game(); 
     
     return 0;
 }
