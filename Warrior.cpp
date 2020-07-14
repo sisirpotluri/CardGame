@@ -201,7 +201,7 @@ public:
     }
     
     int get_wins() override {
-        return wins;
+        return wins; 
     }
     
     void reset_hand() override {
